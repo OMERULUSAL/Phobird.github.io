@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="Tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phobird</title>
+    <link rel="icon" href="img/ico.png">
+    <!-- ! Logomu ekledim -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+        integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+        crossorigin="anonymous"></script>
+    <!-- !Bootstrap'in iconlarını kullanabilmek için Cdn'ini ekledim -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/Custom/extra.css">
+
+    <style>
+        @import url("css/all.css");
+    </style>
+</head>
+
+<body id="page-body">
+    <!-- !Navigation start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="anaNavbar">
+        <!-- ! fixed-top ile navbarı yukarıda sabitledim -->
+        <div class="container">
+            <a href="#page-body" class="navbar-brand text-uppercase" title="home page"><img src="img/Phobird.png"
+                    class="img-fluid" id="logo"></a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#myNavbar">
+                <!-- ? navbar-expand-lg komutu yüzünden large ekranın altına indiğinde button çalışacak -->
+                <span class="navbar-toggler-icon"></span>
+                <!-- ? navbar-toggler-icon hamburger menü yapar -->
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar">
+                <!-- ? offcanvas-end ile sağda görünecek -->
+                <div class="offcanvas-header">
+                    <img src="img/Phobird.png" class="img-fluid" id="logo">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 text-uppercase ms-auto py-lg-2" id="navUl">
+                        <li class="nav-item"><a href="#more" class="nav-link canvas-kapat">Anasayfa</a></li>
+                        <li class="nav-item"><a href="#Category" class="nav-link canvas-kapat">Kategori</a></li>
+                        <li class="nav-item"><a href="#Gender" class="nav-link canvas-kapat">Türler</a></li>
+                        <li class="nav-item"><a href="#About" class="nav-link canvas-kapat">Hakkımızda</a></li>
+                        <li class="nav-item"><a href="#Contact" class="nav-link canvas-kapat">İletişim</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- !Navigation end -->
+
+
+    <!--! Header Start-->
+
+    <header class="backImage text-center text-white">
+        <div class="container">
+            <div class="backImage-sub text-uppercase">
+                Phobird
+            </div>
+            <div class="backImage-heading">
+                <p>
+                    Birçok Türde Kuş Keşfetmeye Hazırmısın?
+                </p>
+            </div>
+            <a href="#Category" class="btn btn-lg text-uppercase font-weight-bolder" id="more">Daha Fazla</a>
+        </div>
+    </header>
+
+    <!--! Header End-->
+
+    <!--! Section start-->
+
+    <section id="Category" class="mySection">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="sec-heading text-uppercase fw-bold">Özel Kuşlar</h2>
+                <h3 class="sec-subheading text-muted">Doğanın Uçan Güzellikleri</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--! Section end-->
+
+    <!-- ! Content Start -->
+    <div class="row text-center mx-0">
+        <div class="col-md-4">
+            <div class="rounded-circle d-flex text-white align-items-center justify-content-center m-auto"
+                style="width: 8rem; height: 8rem; background-color: #df0505;">
+                <!-- ? m-auto bulunduğu satırda ortalama yaptı -->
+                <i class="bi bi-cart2 fs-1"></i>
+            </div>
+            <div class="cont-body">
+                <h3 class="fw-bold">Satın Al</h3>
+                <p class="text-muted">20'den fazla Kuş türünden dilediğiniz satın almak için İletişime Geçebilirsiniz.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle d-flex text-white align-items-center justify-content-center m-auto"
+                style="width: 8rem; height: 8rem; background-color: #df0505;">
+                <!-- ? m-auto bulunduğu satırda ortalama yaptı -->
+                <i class="bi bi-collection fs-1"></i>
+            </div>
+            <div class="cont-body">
+                <h3 class="fw-bold">Kuş Verileri</h3>
+                <p class="text-muted">Dilediğiniz kuşlar hakkında sitemizdeki hayvanseverlerden bilgi alabilirsiniz.</p>
+            </div>
+
+        </div>
+        <div class="col-md-4">
+            <div class="rounded-circle d-flex text-white align-items-center justify-content-center m-auto"
+                style="width: 8rem; height: 8rem; background-color: #df0505;">
+                <!-- ? m-auto bulunduğu satırda ortalama yaptı -->
+                <i class="bi bi-chat-right fs-1"></i>
+            </div>
+            <div class="cont-body">
+                <h3 class="fw-bold">Teklif Ver</h3>
+                <p class="text-muted">Web sitemizde bulunan Birçok kuş için fiyat teklifi verebilirsiniz. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Content End -->
+
+
+    <!-- ! Modalsız Tür Start-->
+
+    <section id="Gender" class="mySection bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="sec-heading text-uppercase fw-bold">Türler</h2>
+                <h3 class="sec-subheading text-muted">Eşsiz güzelliğe sahip kuşlar</h3>
+            </div>
+        </div>
+        <div class="row gx-1 me-0 mb-4" id="arkaplan">
+            <div class="col-sm-4 ">
+                <div class="p-item">
+                    <a href="#mymodalID-1" class="p-link" data-bs-toggle="modal">
+                        <div class="pl-hover">
+                            <div class="ph-content">
+                                <i class="bi bi-plus-lg text-white"></i>
+                            </div>
+                        </div>
+                        <img src="img/bird-1.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Yeşil Papağan</div>
+                        <div class="pc-altyazi text-muted">Tüyler yeşil, gaga kırmızı renktir.</div>
+                    </div>
+                </div>
+            </div><!--! 1. col end-->
+            <div class="col-sm-4 ">
+                <div class="p-item" ">
+                    <a href=" #mymodalID-2" class="p-link" data-bs-toggle="modal">
+                    <div class="pl-hover">
+                        <div class="ph-content">
+                            <i class="bi bi-plus-lg text-white"></i>
+                        </div>
+                    </div>
+                    <img src="img/bird-2.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Bayağı İspinoz</div>
+                        <div class="pc-altyazi text-muted">Bir çoğu serçe iriliğinde, gagaları kısa fakat güçlüdür.
+                        </div>
+                    </div>
+                </div>
+            </div><!--! 2. col end-->
+            <div class="col-sm-4 ">
+                <div class="p-item">
+                    <a href="#mymodalID-3" class="p-link" data-bs-toggle="modal">
+                        <div class="pl-hover">
+                            <div class="ph-content">
+                                <i class="bi bi-plus-lg text-white"></i>
+                            </div>
+                        </div>
+                        <img src="img/bird-3.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Yalıçapkını</div>
+                        <div class="pc-altyazi text-muted">Asıl kökeni; Asya’dır.</div>
+                    </div>
+                </div>
+            </div><!--! 3. col end-->
+            <div class="col-sm-4 ">
+                <div class="p-item">
+                    <a href="#mymodalID-4" class="p-link" data-bs-toggle="modal">
+                        <div class="pl-hover">
+                            <div class="ph-content">
+                                <i class="bi bi-plus-lg text-white"></i>
+                            </div>
+                        </div>
+                        <img src="img/bird-7.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Arı Kuşu</div>
+                        <div class="pc-altyazi text-muted">Arı kuşu ismini beslenme şekillerinden dolayı almıştır.</div>
+                    </div>
+                </div>
+            </div><!--! 4. col end-->
+            <div class="col-sm-4 ">
+                <div class="p-item">
+                    <a href="#mymodalID-5" class="p-link" data-bs-toggle="modal">
+                        <div class="pl-hover">
+                            <div class="ph-content">
+                                <i class="bi bi-plus-lg text-white"></i>
+                            </div>
+                        </div>
+                        <img src="img/Bird9.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Kırmızı Kardinal</div>
+                        <div class="pc-altyazi text-muted">Kardinal kuşları ABD'de Nearktik bölgeye özgü bir kuştur.
+                        </div>
+                    </div>
+                </div>
+            </div><!--! 4. col end-->
+            <div class="col-sm-4 ">
+                <div class="p-item">
+                    <a href="#mymodalID-6" class="p-link" data-bs-toggle="modal">
+                        <div class="pl-hover">
+                            <div class="ph-content">
+                                <i class="bi bi-plus-lg text-white"></i>
+                            </div>
+                        </div>
+                        <img src="img/Bird10.jpg" alt=".." class="img-fluid">
+                    </a>
+                    <div class="p-caption text-center">
+                        <div class="pc-baslik">Batı Mavi Kuşu</div>
+                        <div class="pc-altyazi text-muted">küçük bir Kuzey Amerika ardıç kuşudur .</div>
+                    </div>
+                </div>
+            </div><!--! 4. col end-->
+        </div>
+    </section>
+    <!-- ! Modalsız Tür end-->
+
+    <!-- ! About Start -->
+    <section class="mySection" id="About">
+        <div class="container">
+            <div class="text-center mb-5 pb-3">
+                <h2 class="sec-heading text-uppercase fw-bold">Hakkımızda</h2>
+                <h3 class="sec-subheading text-muted">Kronoloji</h3>
+            </div>
+
+            <ul class="timeline" style="list-style: none;">
+                <li class="text mb-5">
+                    <div class="Time-img">
+                        <img src="img/tuy.jpg" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="Time-panel">
+                        <div class="T-heading">
+                            <h4 class="fs-6 mb-3 mb-md-2 me-lg-3">2010-2012</h4>
+                            <h4 class="fs-6 text-uppercase me-lg-3">Yürüyüş</h4>
+                        </div>
+                        <div class="T-body">
+                            <p class="text-muted fst-italic mt-4 mt-md-2 text-start col-sm-8 col-12 text-lg-end">
+                                Hayvanseverler ile birlikte doğa yürüyüşüne çıkıldı.</p>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- !list-1 end -->
+                <li class="text mb-5 yanagecen">
+                    <div class="Time-img">
+                        <img src="img/tuy.jpg" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="Time-panel">
+                        <div class="T-heading">
+                            <h4 class="fs-6 mb-3 mb-md-2 ms-lg-2">2013-2015</h4>
+                            <h4 class="fs-6 text-uppercase ms-lg-2">Bildiriler</h4>
+                        </div>
+                        <div class="T-body">
+                            <p
+                                class="text-muted fst-italic fs-6 mt-4 mt-md-2  text-start col-sm-8 col-12 text-md-start ms-lg-2">
+                            Hayvanların Lüks ürünler için katledilmemesine yönelik yazılı ve sözlü olarak Bildiriler düzenlenildi</p>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- !list-2 end -->
+                <li class="text mb-5">
+                    <div class="Time-img">
+                        <img src="img/tuy.jpg" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="Time-panel">
+                        <div class="T-heading">
+                            <h4 class="fs-6 mb-3 mb-md-2 me-lg-3">2016-2020</h4>
+                            <h4 class="fs-6 text-uppercase me-lg-3">Seminer</h4>
+                        </div>
+                        <div class="T-body">
+                            <p class="text-muted fst-italic fs-6 mt-4 mt-md-2 text-start col-sm-8 col-12 text-lg-end">
+                                Akdeniz Üniversitesi Atatürk Konferans salonunda hayvan hakları ve korunması hakkında seminer düzenlendi
+                                ve Hayvanseverler Topluluğu oluşturuldu.
+                            </p>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- !list-3 end -->
+                <li class="text mb-5 yanagecen">
+                    <div class="Time-img">
+                        <img src="img/tuy.jpg" class="img-fluid rounded-circle">
+                    </div>
+                    <div class="Time-panel">
+                        <div class="T-heading">
+                            <h4 class="fs-6 mb-3 mb-md-2 ms-lg-2">2021-2022</h4>
+                            <h4 class="fs-6 text-uppercase ms-lg-2">Büyüme</h4>
+                        </div>
+                        <div class="T-body">
+                            <p class="text-muted fst-italic fs-6 mt-4 mt-md-2 text-start col-sm-8 col-12 text-md-start ms-lg-2">
+                                Hayvanseverler Toluluğu 10 bin üzerinde üye ve 50 den fazla sosyal gönüllülük projesine katıldı. </p>
+                        </div>
+                    </div>
+
+                </li>
+                <!-- !list-4 end -->
+                <li class="text mb-5">
+                    <div class="Time-img" >
+                        <img>
+                    </div>
+                    <p class="brd-ici">
+                        Yeni Hedeflerimiz...
+                    </p>
+                </li>
+                <!-- !list-4 end -->
+            </ul>
+        </div>
+    </section>
+    <!-- ! About End -->
+
+    <!-- ! Contact Start -->
+    <section class="mySection" id="Contact">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="sec-heading text-uppercase fw-bold">İletişim</h2>
+                <h3 class="sec-subheading text-muted">Bizimle İletişime Geçin</h3>
+            </div>
+        </div>
+        <form id="frm-Contact" novalidate class="dogrulama-ihtiyaci" action="result.php">
+            <!-- ! novalidate in anlamı html içerisinde javascript hatalarını ben devralacağım sen dokunma demektir.  -->
+            <div class="container">
+                <div class="row align-items-stretch mb-5 gx-0">
+                    <div class="col-md-6" id="con-map">
+                        <div class="form-floating mb-4">
+                            <input type="text" id="name" class="form-control bg-transparent text-white"
+                                placeholder="Adınız" required maxlength="40">
+                            <!-- ! maxlength="40" ile inputa girilecek karakter sayısı maximum 40 olucak dedim -->
+                            <label for="name">Adınız:
+                                <span class="text-warning badge fs-5">*</span>
+                            </label>
+                            <div class="invalid-feedback" id="ErrName"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" id="mail" class="form-control bg-transparent text-white" placeholder="@"
+                                required>
+                            <label for="mail">E-Posta Adresiniz:
+                                <span class="text-warning badge fs-5">*</span>
+                            </label>
+                            <div class="invalid-feedback" id="ErrPosta"></div>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="tel" id="telefon" class="form-control bg-transparent text-white"
+                                placeholder="(5XX) (000) (00) (00)" maxlength="10">
+                            <label for="telefon">Telefon Numaranız:</label>
+                            <div class="invalid-feedback" id="ErrPhone"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="con-2-map">
+                        <div class="form-floating ms-md-4 form-textarea">
+                            <textarea name="message" id="mesaj"
+                                class="form-control bg-transparent text-white fs-6 fw-bold" maxlength="300"
+                                minlength="10"></textarea>
+                            <label for="mesaj" class="form-label fs-5">Mesajınız:</label>
+                            <div class="invalid-feedback" id="ErrText"></div>
+                        </div>
+                        <div class="uzunluk">
+                            <p class="text-white text-end">
+                                <span id="karakter-sayim">
+                                    0
+                                </span>
+                                <span>
+                                    /300
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button class="btn text-uppercase py-3" id="gndrbtn" type="submit" value="Gönder">Gönder</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <!-- ! Contact End -->
+
+
+    <!-- ! Modal Start-->
+    <div class="modal fade myModal" id="mymodalID-1" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-1">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center align-items-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">YEŞİL PAPAĞAN</h2>
+                                <img src="img/bird-1.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    Tüyler yeşil, gaga kırmızı renktir. Erişkin erkek, siyah bir boyun halkası ve pembe
+                                    ense bandına sahiptir, dişi kuş ve olgunlaşmamış her iki eşeydede hiçbir boyun
+                                    halkası veya gölge gibi soluk-koyu gri boyun ve açık ense bantları (Çevreden daha
+                                    açık renkli) yoktur. Uzun kuyruk tüyleri dahil ortalama 40 cm ölçülürler. Ortalama
+                                    tek kanat uzunluğu, 15-17.5 cm kadardır. Kuyruk toplam uzunluğun büyük bir kısmını
+                                    oluşturur. Hızlı uçar, güçlüce kanat çırparlar, uçuşta çığlıksı sesleri duyulur ve
+                                    ağaç kovuklarında yuva yaparlar.
+                                    Yabani yaşamda genellikle, tomurcuklar, meyveler, sebzeler, fındıklar, küçük yumuşak
+                                    meyveler ve tohumlarla beslenirler. Vahşi sürüler çiftlikler ve meyve bahçelerinde
+                                    birkaç millik geniş aramalar yaparken zarar vererek uçarlar.
+                                </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade myModal" id="mymodalID-2" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-2">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">BAYAĞI İSPİNOZ</h2>
+                                <img src="img/bird-2.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    Uzunlukları yaklaşık 15 cm, erkeklerin gaga üstü siyah, tepesi, ense ve boyun
+                                    yanları mavimsi bozdur. Sırtı pas renginde, kuyruksokumu yeşil, kuyruğunun kenar
+                                    tüyleri beyaz, kanatları siyah ve beyaz çizgilidir. Dişiler ve yavrular daha soluk,
+                                    kahverengimsi boz renkleri ile ayırt edilir
+                                </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade myModal" id="mymodalID-3" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-3">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">YALI ÇAPKINI</h2>
+                                <img src="img/bird-3.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    Familya Afrika’dan Avustralya’ya kadar yayılış gösterir. Asıl kökeni; Asya’dır.
+                                    Başları büyük boyunları kısa, gagaları uzun ve kuvvetlidir.28 cm büyüklüğündedir.
+                                    Yaklaşık olarak dört ırk vardır. İzmir yalıçapkının uçuşu hızlı ve öfkelidir. Kısa
+                                    kanatları vardır. Bacakları parlak kırmızıdır. Bir defa da 4-7 beyaz yumurta
+                                    kuluçkaya yatırılır. Orman ve tatlı su kenarlarında yaşarlar. Dalış derinliği 1
+                                    metre olarak değerlendirilmiştir. Böcek ve balık ile beslenirler. Yuvaları;
+                                    genellikle ağaç kavuklarındadır.
+                                </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade myModal" id="mymodalID-4" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-4">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">ARI KUŞU</h2>
+                                <img src="img/bird-7.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    Arı kuşu ismini beslenme şekillerinden dolayı almıştır. Arılar ve diğer böceklerle
+                                    beslenirler. Yatay kum tünellerine ya da toprak oyuklarına yuva yaparlar. Açık
+                                    alanların sivri gagalı, uzun gövdeli ve uzun kuyruklu kuşlarıdır. Uzun, üçgen
+                                    şekildeki kanatlarını süzülürken düz tutar ve ani hızlanma sağlayacak şekilde geriye
+                                    ya da aşağıya doğru hafif vuruşlar yapar. Sesi berrak, tatlı ve sık tekrarlı bir
+                                    prup prupdur. Erkeği ve dişisi benzerdir.
+                                </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade myModal" id="mymodalID-5" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-5">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">KIRMIZI KARDİNAL</h2>
+                                <img src="img/Bird9.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    kırmızı kuşlar isimlerini Amerika'ya ayak basan Avrupalı yerleşimcilerden almıştır.
+                                    Kuşların siyah kırmızı tüyleri yerleşimcilere Roma Katolik Kilisesi liderinin
+                                    cübbesini hatırlatmaktadır. Bu nedenle kardinal adı verilmiştir.
+                                    Pek çok araştırmaya göre bu kuşlara kırmızı rengi veren tüylerindeki karotenoid
+                                    pigmentidir. Bu karotenoidleri beslendikleri yiyeceklerden almaktadır. Bazen nadir
+                                    durumlarda da sarı kardinal kuşları da görülmektedir. </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade myModal" id="mymodalID-6" tabindex="-1">
+        <div class="modal-dialog" id="modalgenis-6">
+            <div class="modal-content">
+                <button type="button" class="btn btn-close" id="kapat" data-bs-dismiss="modal"></button>
+                <div class="container">
+                    <div class="row justify-content-center gx-0 mx-0">
+                        <div class="col-lg-8">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">BATI MAVİ KUŞU</h2>
+                                <img src="img/Bird10.jpg" class="img-fluid mt-2 mb-4">
+                                <p class="">
+                                    Batı mavi kuşu, uzunluğu 15 ila 18 cm (5,9 ila 7,1 inç) olan küçük, tıknaz bir
+                                    kuştur. Yetişkin erkeğin üst kısmı ve boğazı parlak mavidir, turuncu bir göğsü ve
+                                    yanları, sırtında kahverengimsi bir yama ve gri bir karın ve kuyruk altı örtüleri
+                                    vardır. Yetişkin dişinin daha donuk mavi bir gövdesi, kanatları ve kuyruğu, gri bir
+                                    boğazı, donuk turuncu bir göğsü ve gri bir göbeği ve kuyruk altı örtüsü vardır. Her
+                                    iki cinsiyette de oldukça kısa kuyruklu ince düz bir gaga vardır. Olgunlaşmamış
+                                    kuşların renkleri yetişkinlerden daha soluktur.
+                                </p>
+                            </div>
+                            <div class="modal-footer mod-details mt-5 mb-3">
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">Yazar:</h6>
+                                    <p class="col-6 text-start">İçerik</p>
+                                </div>
+                                <div class="row me-5 me-lg-3">
+                                    <h6 class="text-end mt-0 col-6">İletişim:</h6>
+                                    <p class="col-6 text-start">oulusal20@gmail.com</p>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger text-uppercase mb-2" type="button">Daha fazla</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ! Modal End-->
+
+
+    <footer class="myfooter py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center text-lg-start text-muted">
+                    Copyright &copy; Phobird 2022
+                </div>
+                <div class="col-lg-4 text-center my-3 my-lg-0">
+                    <a href="https://tr-tr.facebook.com/" class="mx-3 btn-social"><i
+                            class="bi bi-facebook fs-1 text-dark"></i></a>
+                    <a href="https://twitter.com/" class="mx-3 btn-social"><i
+                            class="bi bi-twitter fs-1 text-dark"></i></a>
+                    <a href="https://instagram.com/" class="mx-3 btn-social"><i
+                            class="bi bi-instagram fs-1 text-dark"></i></a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row footer-link">
+                        <div class="col-lg-6" id="gizlilik">
+                            <a href="#more" class="text-info text-decoration-none ">Gizlilik Politikası</a>
+                        </div>
+                        <div id="link-home" class="col-lg-6 my-4 px-0">
+                            <a href="#more" class="btn btn-outline-dark">Anasayfa</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="JS/Bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="JS/Custom/extra.js"></script>
+</body>
+
+</html>

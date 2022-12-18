@@ -1,0 +1,433 @@
+/* ? Header start */
+.backImage {
+    background-image: url(../../img/bird-6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+
+header.backImage .backImage-sub {
+    font-size: 2rem;
+    line-height: 1.5rem;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header.backImage .backImage-heading {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ? Header end */
+
+/* ? Navigation start */
+#anaNavbar {
+    background-color: #fea5003c;
+}
+
+
+#logo {
+    width: 5.9rem;
+    height: auto;
+}
+
+
+#more {
+    background-color: #fea50082;
+    color: #df050593;
+
+}
+
+#more:hover {
+    color: #df0505;
+}
+
+#navUl .nav-link {
+    color: black;
+    letter-spacing: .1rem;
+    font-size: 1rem;
+}
+
+#navUl .nav-link:hover {
+    border-bottom: 1px solid #df0505;
+}
+
+
+#navUl li {
+    margin-right: 1.5rem;
+}
+
+#navUl li:last-child {
+    margin-right: 0rem;
+}
+
+#navUl .nav-link:hover {
+    color: #df0505;
+}
+
+/* ? Navigation end */
+
+/* ? Section Start */
+
+.mySection {
+    padding: 5rem 0;
+    /* *alt-üst 6rem sağsol 0 */
+}
+
+.mySection .sec-heading {
+    font-size: 2.5rem;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+.mySection .sec-subheading {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* !Modalsız tür alan */
+#Gender .p-item {
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.p-caption .pc-baslik {
+    margin-top: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.p-caption .pc-altyazi {
+    font-style: oblique;
+    font-size: 1rem;
+}
+
+#Gender .p-item .p-link {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+
+}
+
+#Gender .p-item .p-link .pl-hover {
+    background-color: #fea50015;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity ease-in-out 0.3s;
+}
+
+#Gender .p-item .p-link:hover .pl-hover {
+    opacity: 1;
+}
+
+.ph-content {
+    font-size: 4rem;
+}
+
+
+
+/* !Modallı alan */
+#kapat {
+    position: absolute;
+    display: block;
+    top: 0.2rem;
+    right: 0.2rem;
+}
+
+#kapat:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    transition: all .3s ease-in-out;
+}
+
+#arkaplan {
+    background-color: #fea50047;
+}
+
+.myModal {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.myModal .modal-dialog {
+    margin: 1rem;
+    max-width: 80vw;
+    text-align: center;
+}
+
+#modalgenis-1,
+#modalgenis-2,
+#modalgenis-3,
+#modalgenis-4,
+#modalgenis-5,
+#modalgenis-6 {
+    margin-left: 8rem;
+}
+
+
+
+
+
+
+
+
+/* !ABOUT ALAN */
+.timeline {
+    position: relative;
+    /* !Bazı nesneleri absolute ile sayfada bağımsızlaştıracağım ama bunun için esas kabul edecekleri yer relative olan nesnemdir.  */
+    padding: 0;
+
+}
+
+.timeline::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+    width: 2px;
+    margin-left: -1px;
+    content: "";
+    background-color: #fea50082;
+}
+
+.Time-img {
+    position: absolute;
+    z-index: 10;
+    border: 7px solid #fea50082;
+    border-radius: 100%;
+    width: 80px;
+    height: 80px;
+}
+
+.Time-img img {
+    height: 100%;
+    margin-bottom: 0px;
+}
+
+.Time-panel {
+    padding-left: 5.5rem;
+}
+
+.brd-ici {
+    font-size: 10px;
+    padding-top: 20px;
+    padding-left: 11px;
+    width: 10px;
+}
+
+.timeline li:last-child .Time-img {
+    background-color: #fea500;
+    z-index: -2;
+    /* çubuk arkaya geçsin diye z-index verdim */
+}
+
+.T-heading h4 {
+    margin-top: 0;
+    color: inherit;
+    /*! inherit ile yukarıdan miras alır yani evebeyni hangi renkse onu alır. */
+    font-weight: bold;
+}
+
+.T-body {
+    font-size: 1rem;
+}
+
+@media (min-width:993px) {
+    .timeline::before {
+        left: 50%;
+    }
+
+    .timeline {
+        padding: 0;
+    }
+
+    .timeline li {
+        min-height: 100px;
+        margin-bottom: 100px;
+    }
+
+    .Time-panel {
+        padding: 0 50px 20px 30px;
+        text-align: right;
+        width: 50%;
+    }
+
+    .T-body p {
+        text-align: end;
+        margin-left: 30%;
+    }
+
+    .timeline .Time-img {
+        left: 50%;
+        margin-left: -50px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .brd-ici {
+        font-size: 10px;
+        margin-top: 10px;
+        margin-left: 46%;
+    }
+
+    .yanagecen .Time-panel {
+        padding-left: 50px;
+        float: right;
+        text-align: start;
+    }
+
+
+}
+
+/* !Contact ALAN */
+#frm-Contact {
+    background-image: url(../../img/map.jpg);
+    background-position: left;
+    background-attachment: fixed;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+#con-map input {
+    border: 2px solid #fea500;
+}
+
+#con-map label {
+    color: white;
+    font-weight: bold;
+}
+
+#con-2-map textarea {
+    border: 2px solid #fea500;
+    padding-bottom: 12rem;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#con-2-map label {
+    font-size: 1.5rem;
+    color: white;
+}
+
+#con-map input:focus {
+    box-shadow: 2px 5px 10px #df0505;
+}
+
+#con-2-map textarea:focus {
+    box-shadow: 2px 5px 10px #df0505;
+}
+
+#gndrbtn {
+    background-color: #df050589;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    transition: all .3s ease-in-out;
+    color: white;
+    font-weight: bold;
+}
+
+#gndrbtn:hover {
+    background-color: #df0505c0;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    box-shadow: 0px 1px 10px #fea500;
+
+}
+
+
+/* !FOOTER */
+.myfooter .row {
+    align-items: center;
+    justify-content: end;
+}
+
+.footer-link {
+    text-align: center;
+}
+
+#gizlilik,
+#link-home {
+    margin-right: 0px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+
+
+/*  ?Media start */
+@media(max-width:992px) {
+
+    /* ! Large ekran altı genişlik değeridir. */
+    header.backImage {
+        padding-top: 11rem;
+        padding-bottom: 13rem;
+    }
+
+    header.backImage .backImage-heading {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    #anaNavbar {
+        padding-top: 0rem;
+    }
+
+    #modalgenis-1,
+    #modalgenis-2,
+    #modalgenis-3,
+    #modalgenis-4,
+    #modalgenis-5,
+    #modalgenis-6 {
+        margin-left: 3rem;
+    }
+
+
+
+
+}
+
+/* ! Bu medialar sayesinde ekranın genişliğini küçültüp büyütünce resmin görünen bölgeleri değişir bunun nedeni farklı genişliklerde farklı paddingler verdim. */
+
+@media(min-width:993px) {
+
+    /* ! Large ekran ve üstü genişlik değeridir. */
+    header.backImage {
+        padding-top: 15rem;
+        padding-bottom: 15rem;
+    }
+
+    #anaNavbar {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        border: none;
+
+    }
+}
+
+/* ? Media end */
+
+
+
+
+/*! Kullanacağım renk kodları
+    #fea500 -sarı yakını
+    #df0505
+    #e31b04    
+    #e73203
+    #ec4902  */
