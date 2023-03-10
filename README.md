@@ -1,3 +1,4 @@
 # Phobird.github.io
 
-<img width="949" alt="bird" src="https://user-images.githubusercontent.com/96357374/224154473-2f8e4585-7786-442d-993b-deaee5ae3aaf.png">
+
+![phobird](https://user-images.githubusercontent.com/96357374/224403073-6a75a250-00e4-46e6-8b6e-f3fdd20b588c.png)
