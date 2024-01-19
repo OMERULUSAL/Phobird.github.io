@@ -48,20 +48,13 @@ for (let i = 0; i < BtnCanvas.length; i++) {
     var MyTelefon = document.querySelector("#telefon");
     var MyMesaj = document.querySelector("#mesaj");
     var MyBTN = document.querySelector("#gndrbtn");
-
-
-
     if (MyMesaj.value.length == 0) {
         MyBTN.disabled = true;
-
     }
-
-
     MyMesaj.addEventListener("keyup", function () {
         // ! keyup: Tuşa tıklayıp elimi kaldırdığım anda çalış demektir.
         // !buradaki amacım girilen karakter kaçtane ise onu sayıp ilerlesin zaten indexte maxlenght'i 300 yapmıştm.
         document.getElementById("karakter-sayim").textContent = MyMesaj.value.length;
-
 
         if (MyMesaj.value.length >= 10) {
             MyBTN.disabled = false;
@@ -71,6 +64,5 @@ for (let i = 0; i < BtnCanvas.length; i++) {
             MyBTN.disabled = true;
             // ! Eğer kişi girdiği karakterleri silmişse ve 10'dan küçükse Butonun disabled özelliği true ile tekrar aktif edilir.
         }
-
     });
 })();

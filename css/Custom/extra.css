@@ -95,7 +95,7 @@ header.backImage .backImage-heading {
 }
 
 /* !Modalsız tür alan */
-#Gender .p-item {
+#Genre .p-item {
     padding-bottom: 1rem;
     font-size: 1.2rem;
     line-height: 2rem;
@@ -111,14 +111,14 @@ header.backImage .backImage-heading {
     font-size: 1rem;
 }
 
-#Gender .p-item .p-link {
+#Genre .p-item .p-link {
     position: relative;
     display: block;
     margin: 0 auto;
 
 }
 
-#Gender .p-item .p-link .pl-hover {
+#Genre .p-item .p-link .pl-hover {
     background-color: #fea50015;
     display: flex;
     position: absolute;
@@ -130,7 +130,7 @@ header.backImage .backImage-heading {
     transition: opacity ease-in-out 0.3s;
 }
 
-#Gender .p-item .p-link:hover .pl-hover {
+#Genre .p-item .p-link:hover .pl-hover {
     opacity: 1;
 }
 
@@ -226,6 +226,8 @@ header.backImage .backImage-heading {
     padding-top: 20px;
     padding-left: 11px;
     width: 10px;
+    padding-top: 2rem;
+    padding-left: 1rem;
 }
 
 .timeline li:last-child .Time-img {
